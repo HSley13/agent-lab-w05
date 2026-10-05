@@ -1,0 +1,62 @@
+[
+  {
+    "source": "announcement.txt",
+    "destination": "announcements/announcement.txt",
+    "reason": "Club announcement text; content is byte-identical to announcement_copy.txt, kept as a separate copy pending human confirmation of which filename is canonical."
+  },
+  {
+    "source": "announcement_copy.txt",
+    "destination": "announcements/announcement_copy.txt",
+    "reason": "Club announcement text; content is byte-identical to announcement.txt, kept as a separate copy pending human confirmation of which filename is canonical."
+  },
+  {
+    "source": "budget_draft.txt",
+    "destination": "budget/budget_draft.txt",
+    "reason": "Draft paper budget figure, explicitly marked as not an approved expense."
+  },
+  {
+    "source": "equipment_backup.txt",
+    "destination": "equipment/equipment_backup.txt",
+    "reason": "Equipment count list; content is byte-identical to equipment_list.txt, kept as a separate copy pending human confirmation of which filename is canonical."
+  },
+  {
+    "source": "equipment_list.txt",
+    "destination": "equipment/equipment_list.txt",
+    "reason": "Equipment count list; content is byte-identical to equipment_backup.txt, kept as a separate copy pending human confirmation of which filename is canonical."
+  },
+  {
+    "source": "feedback_questions.txt",
+    "destination": "feedback/feedback_questions.txt",
+    "reason": "Post-activity feedback questions, distinct content."
+  },
+  {
+    "source": "meeting_notes.txt",
+    "destination": "meeting/meeting_notes.txt",
+    "reason": "Notes for an upcoming meeting (indoor/outdoor decision pending)."
+  },
+  {
+    "source": "next_steps.txt",
+    "destination": "meeting/next_steps.txt",
+    "reason": "Follow-up action grouped with meeting notes; both describe comparing undecided proposals."
+  },
+  {
+    "source": "poster_text.txt",
+    "destination": "creative/poster_text.txt",
+    "reason": "Creative/poster copy, distinct content with no match elsewhere."
+  },
+  {
+    "source": "proposal_final.txt",
+    "destination": "proposals/proposal_final.txt",
+    "reason": "Proposal v1 (outdoor, 30 minutes); similarly named to proposal_final2.txt but content differs, so both versions are kept, not merged or deleted. The 'final' filename does not by itself indicate the approved version."
+  },
+  {
+    "source": "proposal_final2.txt",
+    "destination": "proposals/proposal_final2.txt",
+    "reason": "Proposal v2 (indoor, 20 minutes); similarly named to proposal_final.txt but content differs, so both versions are kept, not merged or deleted. The 'final2' filename does not by itself indicate the approved version."
+  },
+  {
+    "source": "rain_plan.txt",
+    "destination": "meeting/rain_plan.txt",
+    "reason": "Contingency note tied to the same indoor/outdoor decision as meeting_notes.txt and next_steps.txt."
+  }
+]
