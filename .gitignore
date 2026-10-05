@@ -1,3 +1,10 @@
 __pycache__/
 .DS_Store
 Thumbs.db
+
+# graphify knowledge-graph output (local tooling artifact, not part of the submission)
+graphify-out/
+
+# Claude Code artifacts
+.claude/
+CLAUDE.md
