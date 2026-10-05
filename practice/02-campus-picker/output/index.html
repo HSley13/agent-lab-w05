@@ -120,7 +120,10 @@
   <div class="card result" id="resultCard"></div>
 
   <div class="card">
-    <div class="section-title"><span id="historyTitle"></span></div>
+    <div class="section-title">
+      <span id="historyTitle"></span>
+      <button id="clearHistoryBtn" type="button" class="lang-toggle"></button>
+    </div>
     <ul class="history-list" id="historyList"></ul>
   </div>
 </div>
@@ -153,6 +156,7 @@ var STRINGS = {
     lblEnergy: "活力程度",
     pick: "抽一個活動",
     reset: "重設篩選",
+    clearHistory: "清除紀錄",
     historyTitle: "最近 5 次成功結果",
     noMatch: "沒有符合的活動。",
     resultHint: "按「抽一個活動」開始。",
@@ -169,6 +173,7 @@ var STRINGS = {
     lblEnergy: "Energy",
     pick: "Pick an activity",
     reset: "Reset filters",
+    clearHistory: "Clear history",
     historyTitle: "Last 5 successful picks",
     noMatch: "No matching activities.",
     resultHint: "Press “Pick an activity” to start.",
@@ -212,6 +217,7 @@ function render() {
   el("lblEnergy").textContent = t.lblEnergy;
   el("pickBtn").textContent = t.pick;
   el("resetBtn").textContent = t.reset;
+  el("clearHistoryBtn").textContent = t.clearHistory;
   el("historyTitle").textContent = t.historyTitle;
 
   buildSelect(el("locationSelect"), [
@@ -311,8 +317,14 @@ function resetFilters() {
   render();
 }
 
+function clearHistory() {
+  state.history = [];
+  renderHistory();
+}
+
 el("pickBtn").addEventListener("click", pick);
 el("resetBtn").addEventListener("click", resetFilters);
+el("clearHistoryBtn").addEventListener("click", clearHistory);
 el("locationSelect").addEventListener("change", function (e) { state.location = e.target.value; });
 el("minutesSelect").addEventListener("change", function (e) { state.minutes = Number(e.target.value); });
 el("energySelect").addEventListener("change", function (e) { state.energy = e.target.value; });
